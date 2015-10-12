@@ -14,6 +14,13 @@
 		09B10F621BCB3A7A00F90E97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09B10F601BCB3A7A00F90E97 /* LaunchScreen.storyboard */; };
 		09B10F6D1BCB3A7A00F90E97 /* Project_4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B10F6C1BCB3A7A00F90E97 /* Project_4Tests.swift */; };
 		09B10F781BCB3A7A00F90E97 /* Project_4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B10F771BCB3A7A00F90E97 /* Project_4UITests.swift */; };
+		09B10F861BCB592800F90E97 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B10F851BCB592800F90E97 /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		09B10F881BCB593400F90E97 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B10F871BCB593400F90E97 /* SearchViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		09B10F8A1BCB594400F90E97 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B10F891BCB594400F90E97 /* AccountViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		09B10F8C1BCB594B00F90E97 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B10F8B1BCB594B00F90E97 /* ComposeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		09B10F8E1BCB595900F90E97 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B10F8D1BCB595900F90E97 /* TrendingViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		09B10F901BCB596A00F90E97 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B10F8F1BCB596A00F90E97 /* TabBarViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		09B10F921BCB911300F90E97 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B10F911BCB911300F90E97 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,12 +48,19 @@
 		09B10F5E1BCB3A7A00F90E97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09B10F611BCB3A7A00F90E97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09B10F631BCB3A7A00F90E97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09B10F681BCB3A7A00F90E97 /* Project 4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 4Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		09B10F681BCB3A7A00F90E97 /* Project 4.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 4.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09B10F6C1BCB3A7A00F90E97 /* Project_4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_4Tests.swift; sourceTree = "<group>"; };
 		09B10F6E1BCB3A7A00F90E97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09B10F731BCB3A7A00F90E97 /* Project 4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 4UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		09B10F731BCB3A7A00F90E97 /* Project 4.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 4.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09B10F771BCB3A7A00F90E97 /* Project_4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_4UITests.swift; sourceTree = "<group>"; };
 		09B10F791BCB3A7A00F90E97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09B10F851BCB592800F90E97 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		09B10F871BCB593400F90E97 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		09B10F891BCB594400F90E97 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		09B10F8B1BCB594B00F90E97 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		09B10F8D1BCB595900F90E97 /* TrendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
+		09B10F8F1BCB596A00F90E97 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		09B10F911BCB911300F90E97 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				09B10F541BCB3A7A00F90E97 /* Project 4.app */,
-				09B10F681BCB3A7A00F90E97 /* Project 4Tests.xctest */,
-				09B10F731BCB3A7A00F90E97 /* Project 4UITests.xctest */,
+				09B10F681BCB3A7A00F90E97 /* Project 4.xctest */,
+				09B10F731BCB3A7A00F90E97 /* Project 4.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +114,13 @@
 				09B10F571BCB3A7A00F90E97 /* AppDelegate.swift */,
 				09B10F591BCB3A7A00F90E97 /* ViewController.swift */,
 				09B10F5B1BCB3A7A00F90E97 /* Main.storyboard */,
+				09B10F911BCB911300F90E97 /* LoginViewController.swift */,
+				09B10F851BCB592800F90E97 /* HomeViewController.swift */,
+				09B10F871BCB593400F90E97 /* SearchViewController.swift */,
+				09B10F891BCB594400F90E97 /* AccountViewController.swift */,
+				09B10F8B1BCB594B00F90E97 /* ComposeViewController.swift */,
+				09B10F8D1BCB595900F90E97 /* TrendingViewController.swift */,
+				09B10F8F1BCB596A00F90E97 /* TabBarViewController.swift */,
 				09B10F5E1BCB3A7A00F90E97 /* Assets.xcassets */,
 				09B10F601BCB3A7A00F90E97 /* LaunchScreen.storyboard */,
 				09B10F631BCB3A7A00F90E97 /* Info.plist */,
@@ -160,7 +181,7 @@
 			);
 			name = "Project 4Tests";
 			productName = "Project 4Tests";
-			productReference = 09B10F681BCB3A7A00F90E97 /* Project 4Tests.xctest */;
+			productReference = 09B10F681BCB3A7A00F90E97 /* Project 4.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		09B10F721BCB3A7A00F90E97 /* Project 4UITests */ = {
@@ -178,7 +199,7 @@
 			);
 			name = "Project 4UITests";
 			productName = "Project 4UITests";
-			productReference = 09B10F731BCB3A7A00F90E97 /* Project 4UITests.xctest */;
+			productReference = 09B10F731BCB3A7A00F90E97 /* Project 4.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -255,8 +276,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09B10F921BCB911300F90E97 /* LoginViewController.swift in Sources */,
+				09B10F901BCB596A00F90E97 /* TabBarViewController.swift in Sources */,
+				09B10F8E1BCB595900F90E97 /* TrendingViewController.swift in Sources */,
 				09B10F5A1BCB3A7A00F90E97 /* ViewController.swift in Sources */,
+				09B10F8A1BCB594400F90E97 /* AccountViewController.swift in Sources */,
 				09B10F581BCB3A7A00F90E97 /* AppDelegate.swift in Sources */,
+				09B10F8C1BCB594B00F90E97 /* ComposeViewController.swift in Sources */,
+				09B10F881BCB593400F90E97 /* SearchViewController.swift in Sources */,
+				09B10F861BCB592800F90E97 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,7 +427,7 @@
 				INFOPLIST_FILE = "Project 4/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Climate.Project-4";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Project 4";
 			};
 			name = Debug;
 		};
@@ -410,7 +438,7 @@
 				INFOPLIST_FILE = "Project 4/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Climate.Project-4";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Project 4";
 			};
 			name = Release;
 		};
@@ -421,7 +449,7 @@
 				INFOPLIST_FILE = "Project 4Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Climate.Project-4Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Project 4";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 4.app/Project 4";
 			};
 			name = Debug;
@@ -433,7 +461,7 @@
 				INFOPLIST_FILE = "Project 4Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Climate.Project-4Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Project 4";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 4.app/Project 4";
 			};
 			name = Release;
@@ -444,7 +472,7 @@
 				INFOPLIST_FILE = "Project 4UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Climate.Project-4UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Project 4";
 				TEST_TARGET_NAME = "Project 4";
 				USES_XCTRUNNER = YES;
 			};
@@ -456,7 +484,7 @@
 				INFOPLIST_FILE = "Project 4UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Climate.Project-4UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Project 4";
 				TEST_TARGET_NAME = "Project 4";
 				USES_XCTRUNNER = YES;
 			};
@@ -481,6 +509,7 @@
 				09B10F7E1BCB3A7A00F90E97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09B10F7F1BCB3A7A00F90E97 /* Build configuration list for PBXNativeTarget "Project 4Tests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +518,7 @@
 				09B10F811BCB3A7A00F90E97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09B10F821BCB3A7A00F90E97 /* Build configuration list for PBXNativeTarget "Project 4UITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +527,7 @@
 				09B10F841BCB3A7A00F90E97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
