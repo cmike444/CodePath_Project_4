@@ -23,7 +23,7 @@ class TabBarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         homeViewController = storyboard.instantiateViewControllerWithIdentifier("HomeViewController")
         searchViewController = storyboard.instantiateViewControllerWithIdentifier("SearchViewController")

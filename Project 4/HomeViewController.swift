@@ -10,10 +10,23 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var searchTooltip: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        searchTooltip.alpha = 1
+        UIView.animateWithDuration(1.0, delay: 0.5, options: [.Repeat, .Autoreverse], animations: { () -> Void in
+            self.searchTooltip.center.y += 5
+            self.searchTooltip.center.y -= 5
+            }) { (completed) -> Void in
+                print("hover completed")
+        }
     }
 
     override func didReceiveMemoryWarning() {

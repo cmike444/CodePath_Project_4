@@ -10,6 +10,7 @@ import UIKit
 
 class TrendingViewController: UIViewController {
 
+    @IBOutlet weak var searchTooltip: UIImageView!
     @IBOutlet weak var trendingScrollView: UIScrollView!
     
     override func viewDidLoad() {
@@ -18,6 +19,17 @@ class TrendingViewController: UIViewController {
         // Do any additional setup after loading the view.
         trendingScrollView.contentSize = CGSize(width: 320, height: 1217)
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        searchTooltip.alpha = 1
+        UIView.animateWithDuration(1.0, delay: 0.5, options: [.Repeat, .Autoreverse], animations: { () -> Void in
+            self.searchTooltip.center.y += 5
+            self.searchTooltip.center.y -= 5
+            }) { (completed) -> Void in
+                print("hover completed")
+        }
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -23,18 +23,23 @@ class ComposeViewController: UIViewController {
     
     var photoButtonStartPosition: CGPoint!
     var photoButtonEndPosition: CGPoint!
+    var photoButtonClosePosition: CGPoint!
     
     var quoteButtonStartPosition: CGPoint!
     var quoteButtonEndPosition: CGPoint!
+    var quoteButtonClosePosition: CGPoint!
     
     var linkButtonStartPosition: CGPoint!
     var linkButtonEndPosition: CGPoint!
+    var linkButtonClosePosition: CGPoint!
     
     var chatButtonStartPosition: CGPoint!
     var chatButtonEndPosition: CGPoint!
+    var chatButtonClosePosition: CGPoint!
     
     var videoButtonStartPosition: CGPoint!
     var videoButtonEndPosition: CGPoint!
+    var videoButtonClosePosition: CGPoint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,108 +47,107 @@ class ComposeViewController: UIViewController {
         print("Text: \(textButton.center)")
         textButton.alpha = 0;
         textButtonStartPosition = CGPoint(x: 57.5, y: 524)
+        textButton.center = textButtonStartPosition
         textButtonEndPosition = CGPoint(x: 57.5, y: 154.5)
-        textButtonClosePosition = CGPoint(x: 57.5, y: -50.0)
+        textButtonClosePosition = CGPoint(x: 57.5, y: -100.0)
         
         print("Photo: \(photoButton.center)")
         photoButton.alpha = 0;
         photoButtonStartPosition = CGPoint(x: 160.5, y: 400)
+        photoButton.center = photoButtonStartPosition
         photoButtonEndPosition = CGPoint(x: 160.5, y: 154.5)
+        photoButtonClosePosition = CGPoint(x: 160.5, y: -100.0)
         
         print("Quote: \(quoteButton.center)")
         quoteButton.alpha = 0;
         quoteButtonStartPosition = CGPoint(x: 262.5, y: 450)
+        quoteButton.center = quoteButtonStartPosition
         quoteButtonEndPosition = CGPoint(x: 262.5, y: 154.5)
+        quoteButtonClosePosition = CGPoint(x: 262.5, y: -100.0)
         
         print("Link: \(linkButton.center)")
         linkButton.alpha = 0;
         linkButtonStartPosition = CGPoint(x: 57.5, y: 480)
+        linkButton.center = linkButtonStartPosition
         linkButtonEndPosition = CGPoint(x: 57.5, y: 283.5)
+        linkButtonClosePosition = CGPoint(x: 57.7, y: -100.0)
         
         print("Chat: \(chatButton.center)")
         chatButton.alpha = 0;
         chatButtonStartPosition = CGPoint(x:160.5, y: 410)
+        chatButton.center = chatButtonStartPosition
         chatButtonEndPosition = CGPoint(x: 160.5, y: 283.5)
+        chatButtonClosePosition = CGPoint(x: 160.5, y: -100.0)
         
         print("Video: \(videoButton.center)")
         videoButton.alpha = 0;
         videoButtonStartPosition = CGPoint(x:262.5, y: 410)
+        videoButton.center = videoButtonStartPosition
         videoButtonEndPosition = CGPoint(x: 262.5, y: 283.5)
+        videoButtonClosePosition = CGPoint(x: 262.5, y: -100.0)
     }
 
     override func viewDidAppear(animated: Bool) {
         
-        UIView.animateWithDuration(0.25, delay: 0, usingSpringWithDamping: 10.0, initialSpringVelocity: 3.0, options: [], animations: { () -> Void in
-            
+        UIView.animateWithDuration(0.25, delay: 0, options: .CurveEaseInOut, animations: { () -> Void in
             self.textButton.alpha = 1;
-            self.textButton.layer.position = self.textButtonEndPosition
-            let textAnimation = CABasicAnimation(keyPath: "position")
-            textAnimation.fromValue = NSValue(CGPoint:self.textButtonStartPosition)
-            textAnimation.toValue = NSValue(CGPoint:self.textButtonEndPosition)
-            textAnimation.duration = 0.17
-            self.textButton.layer.addAnimation(textAnimation, forKey: "textButtonAnimationKey")
-            
+            self.textButton.center = self.textButtonEndPosition
+            }, completion: nil)
+        UIView.animateWithDuration(0.25, delay: 0.1, options: .CurveEaseInOut, animations: { () -> Void in
             self.photoButton.alpha = 1;
-            self.photoButton.layer.position = self.photoButtonEndPosition
-            let photoAnimation = CABasicAnimation(keyPath: "position")
-            photoAnimation.fromValue = NSValue(CGPoint:self.photoButtonStartPosition)
-            photoAnimation.toValue = NSValue(CGPoint:self.photoButtonEndPosition)
-            photoAnimation.duration = 0.12
-            self.photoButton.layer.addAnimation(photoAnimation, forKey: "photoButtonAnimationKey")
-            
+            self.photoButton.center = self.photoButtonEndPosition
+            }, completion: nil)
+        UIView.animateWithDuration(0.25, delay: 0.15, options: .CurveEaseInOut, animations: { () -> Void in
             self.quoteButton.alpha = 1;
-            self.quoteButton.layer.position = self.quoteButtonEndPosition
-            let quoteAnimation = CABasicAnimation(keyPath: "position")
-            quoteAnimation.fromValue = NSValue(CGPoint:self.quoteButtonStartPosition)
-            quoteAnimation.toValue = NSValue(CGPoint:self.quoteButtonEndPosition)
-            quoteAnimation.duration = 0.16
-            self.quoteButton.layer.addAnimation(quoteAnimation, forKey: "quoteButtonAnimationKey")
-            
+            self.quoteButton.center = self.quoteButtonEndPosition
+            }, completion: nil)
+        UIView.animateWithDuration(0.25, delay: 0.2, options: .CurveEaseInOut, animations: { () -> Void in
             self.linkButton.alpha = 1;
-            self.linkButton.layer.position = self.linkButtonEndPosition
-            let linkAnimation = CABasicAnimation(keyPath: "position")
-            linkAnimation.fromValue = NSValue(CGPoint:self.linkButtonStartPosition)
-            linkAnimation.toValue = NSValue(CGPoint:self.linkButtonEndPosition)
-            linkAnimation.duration = 0.13
-            self.linkButton.layer.addAnimation(linkAnimation, forKey: "linkButtonAnimationKey")
-            
+            self.linkButton.center = self.linkButtonEndPosition
+            }, completion: nil)
+        UIView.animateWithDuration(0.25, delay: 0.12, options: .CurveEaseInOut, animations: { () -> Void in
             self.chatButton.alpha = 1;
-            self.chatButton.layer.position = self.chatButtonEndPosition
-            let chatAnimation = CABasicAnimation(keyPath: "position")
-            chatAnimation.fromValue = NSValue(CGPoint:self.chatButtonStartPosition)
-            chatAnimation.toValue = NSValue(CGPoint:self.chatButtonEndPosition)
-            chatAnimation.duration = 0.17
-            self.chatButton.layer.addAnimation(chatAnimation, forKey: "chatButtonAnimationKey")
-            
+            self.chatButton.center = self.chatButtonEndPosition
+            }, completion: nil)
+        UIView.animateWithDuration(0.25, delay: 0.17, options: .CurveEaseInOut, animations: { () -> Void in
             self.videoButton.alpha = 1;
-            self.videoButton.layer.position = self.videoButtonEndPosition
-            let videoAnimation = CABasicAnimation(keyPath: "position")
-            videoAnimation.fromValue = NSValue(CGPoint:self.videoButtonStartPosition)
-            videoAnimation.toValue = NSValue(CGPoint:self.videoButtonEndPosition)
-            videoAnimation.duration = 0.19
-            self.videoButton.layer.addAnimation(videoAnimation, forKey: "videoButtonAnimationKey")
-
-
-            
-            }) { (completed) -> Void in
-                NSLog("Compose Modal Animation Completed.")
-        }
-        
+            self.videoButton.center = self.videoButtonEndPosition
+            }, completion: nil)
         
     }
     @IBAction func onNevermindButton(button: UIButton) {
         
-        UIView.animateWithDuration(3, delay: 3, usingSpringWithDamping: 3.0, initialSpringVelocity: 10.0, options: [], animations: { () -> Void in
+        UIView.animateWithDuration(3, delay: 0, usingSpringWithDamping: 3.0, initialSpringVelocity: 10.0, options: [], animations: { () -> Void in
             
-            let textCloseAnimation = CABasicAnimation(keyPath: "position")
-            textCloseAnimation.fromValue = NSValue(CGPoint: self.textButton.center)
-            textCloseAnimation.toValue = NSValue(CGPoint:self.textButtonClosePosition)
-            textCloseAnimation.duration = 3
-            self.textButton.layer.addAnimation(textCloseAnimation, forKey: "textButtonCloseAnimationKey")
+            UIView.animateWithDuration(0.25, delay: 0, options: .CurveEaseInOut, animations: { () -> Void in
+                self.textButton.center = self.textButtonClosePosition
+                self.textButton.alpha = 0;
+                }, completion: nil)
+            UIView.animateWithDuration(0.25, delay: 0.1, options: .CurveEaseInOut, animations: { () -> Void in
+                self.photoButton.center = self.photoButtonClosePosition
+                self.photoButton.alpha = 0;
+                }, completion: nil)
+            UIView.animateWithDuration(0.25, delay: 0.15, options: .CurveEaseInOut, animations: { () -> Void in
+                self.quoteButton.center = self.quoteButtonClosePosition
+                self.quoteButton.alpha = 0;
+                }, completion: nil)
+            UIView.animateWithDuration(0.25, delay: 0.2, options: .CurveEaseInOut, animations: { () -> Void in
+                self.linkButton.center = self.linkButtonClosePosition
+                self.linkButton.alpha = 0;
+                }, completion: nil)
+            UIView.animateWithDuration(0.25, delay: 0.12, options: .CurveEaseInOut, animations: { () -> Void in
+                self.chatButton.center = self.chatButtonClosePosition
+                self.chatButton.alpha = 0;
+                }, completion: nil)
+            UIView.animateWithDuration(0.25, delay: 0.17, options: .CurveEaseInOut, animations: { () -> Void in
+                self.videoButton.center = self.videoButtonClosePosition
+                self.videoButton.alpha = 0;
+                }, completion: nil)
             
             }) { (completed) -> Void in
-                 NSLog("Dismiss Compose Animation Completed.")
-                self.dismissViewControllerAnimated(true, completion: nil)
+                self.delay(0.5) {
+                    self.dismissViewControllerAnimated(true, completion: nil)
+                }
         }
         
     }
@@ -151,6 +155,15 @@ class ComposeViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func delay(delay:Double, closure:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
     }
     
 
