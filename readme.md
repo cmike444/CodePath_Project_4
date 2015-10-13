@@ -6,7 +6,7 @@ Time: I spent around 5-6 hours on the exercise
 
 Walkthrough of all the project stories:
 
-![Video Walkthrough](project-4.gif)
+![Video Walkthrough](project-4-1.gif)
 
 
 The GIF was created with [LiceCap](http://www.cockos.com/licecap/).
